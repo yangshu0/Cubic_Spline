@@ -14,8 +14,8 @@ int main(int argc, char** argv) {
 	int w = 640;
 	cv::Mat myImage = cv::Mat::zeros(w, w, CV_8UC3);
 	
-	double x1 = 0.1; 
-	double y1 = 0.1;
+	double x1 = 0; 
+	double y1 = spline.getY(0);
 	for (double x2 = 0; x2 < 2.2; x2 += 0.02) {
 		double y2 = spline.getY(x2);
 		std::cout << x2 << ":" << y2 << std::endl;
